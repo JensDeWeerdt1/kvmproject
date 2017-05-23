@@ -19,9 +19,9 @@
                 </div>
            <hr>
              <ul class="flexcontainer">
-                <a href="#"><li class="flex-item"><img class="overview" src="../../images/overview2.jpg" alt="sfeer image"></li><div class="flexcontainer1"><h3 class="flex-item1">KVM</h3><h3 class="flex-item1">0-0</h3><h3 class="flex-item1">Lierse</h3></div></a>
-                <a href="#"><li class="flex-item"><img class="overview" src="../../images/overview2.jpg" alt="sfeer image"></li><div class="flexcontainer1"><h3 class="flex-item1">KVM</h3><h3 class="flex-item1">0-0</h3><h3 class="flex-item1">Lierse</h3></div></a>
-                <a href="#"><li class="flex-item"><img class="overview" src="../../images/overview2.jpg" alt="sfeer image"></li><div class="flexcontainer1"><h3 class="flex-item1">KVM</h3><h3 class="flex-item1">0-0</h3><h3 class="flex-item1">Lierse</h3></div></a>
+                <a href="/herbekijk"><li class="flex-item"><img class="overview" src="../../images/overview2.jpg" alt="sfeer image"></li><div class="flexcontainer1"><h3 class="flex-item1">KVM</h3><h3 class="flex-item1">2-0</h3><h3 class="flex-item1">Lierse</h3></div></a>
+                <a href="/herbekijk"><li class="flex-item"><img class="overview" src="../../images/overview2.jpg" alt="sfeer image"></li><div class="flexcontainer1"><h3 class="flex-item1">Standard</h3><h3 class="flex-item1">0-1</h3><h3 class="flex-item1">KVM</h3></div></a>
+                <a href="/herbekijk"><li class="flex-item"><img class="overview" src="../../images/overview2.jpg" alt="sfeer image"></li><div class="flexcontainer1"><h3 class="flex-item1">KVM</h3><h3 class="flex-item1">1-1</h3><h3 class="flex-item1">Gent</h3></div></a>
              </ul>
         </div>
     </div>

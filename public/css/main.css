@@ -125,4 +125,16 @@ body,html{
     margin-bottom:20px;
 }
 
+.videotitles{
+    margin-top:0px;
+    color:white;
+    text-align:left;
+    padding-left:100px;
+}
 
+.videoplayer{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}

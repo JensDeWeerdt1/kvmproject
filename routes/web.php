@@ -46,6 +46,10 @@ Route::get('/profiel/instellingen', function(){
     return view('profile_settings')->with('title', 'Profile settings');
 });
 
+route::get('/herbekijk', function(){
+    return view('play');
+});
+
 // profiel instellingen wijzigen
 Route::post('/profiel/instellingen/avatar', 'ProfileController@UserAvatar');
 Route::post('/profiel/instellingen/wachtwoord', 'ProfileController@UserPassword');
