@@ -46,9 +46,8 @@ Route::get('/profiel/instellingen', function(){
     return view('profile_settings')->with('title', 'Profile settings');
 });
 
-route::get('/herbekijk', function(){
-    return view('play');
-});
+Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
+
 
 // profiel instellingen wijzigen
 Route::post('/profiel/instellingen/avatar', 'ProfileController@UserAvatar');
