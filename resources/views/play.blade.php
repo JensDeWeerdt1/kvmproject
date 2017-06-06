@@ -8,5 +8,12 @@
                 <h2 class="videotitles">Football 360</h2>
             </div>
         </div>
+        <div class="row" id="app">
+            <h1>Chatbox</h1>
+            <chat-message></chat-message>
+            <chat-log></chat-log>
+            <chat-composer></chat-composer>
+        </div>
     </div>
+
 @endsection
