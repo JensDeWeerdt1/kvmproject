@@ -10,9 +10,8 @@
         </div>
         <div class="row" id="app">
             <h1>Chatbox</h1>
-            <chat-message></chat-message>
-            <chat-log></chat-log>
-            <chat-composer></chat-composer>
+            <chat-log :messages="messages"></chat-log>
+            <chat-composer v-on:messagesent="addMessage"></chat-composer>
         </div>
     </div>
 

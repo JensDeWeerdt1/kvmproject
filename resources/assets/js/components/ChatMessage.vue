@@ -1,20 +1,22 @@
 <template lang="html">
     <div>
-        <p>{{ message }}</p>
-        <small>{{ user }}</small>
+        <p>{{ message.message }}</p>
+        <small>{{ message.user.name }}</small>
     </div>
 </template>
 
 <script>
 export default {
-    data(){
-        return {
-            message: "This is some message text",
-            user: "Fabio"
-        }
-    }
+    props: ['message']
 }
 </script>
 
 <style lang="css">
+    .chat-message {
+        padding: 1rem;
+    }
+
+    .chat-message > p {
+        margin-bottom: .5rem;
+    }
 </style>

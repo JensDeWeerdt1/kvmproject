@@ -21,5 +21,22 @@ Vue.component('chat-log', require('./components/ChatLog.vue'));
 Vue.component('chat-composer', require('./components/ChatComposer.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        messages: []
+    },
+    methods: {
+        addMessage(message) {
+            console.log("message added.");
+            //add to existing messages
+            this.messages.push(message);
+            //presist to database
+            axios.post('/messages', message);
+        }
+    },
+    created(){
+        axios.get('/messages').then(response => {
+            this.messages = response.data;
+        });
+    }
 });

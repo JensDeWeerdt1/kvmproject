@@ -47,7 +47,18 @@ Route::get('/profiel/instellingen', function(){
 });
 
 Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
+/*MESSAGES*/
+Route::post('/messages', function (){
+    // store the new message
+    $user = Auth::user();
 
+    $user->messages()->create([
+        'message' => request()->get('message')
+    ]);
+
+    return ['status' => "OK"];
+   //return App\Message::with('user')->get();
+})->middleware('auth');
 
 // profiel instellingen wijzigen
 Route::post('/profiel/instellingen/avatar', 'ProfileController@UserAvatar');
