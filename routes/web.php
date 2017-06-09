@@ -57,4 +57,4 @@ Route::get('/profiel/DeleteUser/{id}', 'ProfileController@DeleteUser');
 Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
 
 /*CHAT ROUTES*/
-Route::post('/herbekijk/chat', 'ChatController@Chat');
+Route::post('/herbekijk/{video_id}/chat', 'ChatController@Chat');
