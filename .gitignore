@@ -1,10 +1,10 @@
-/node_modules
-/public/storage
-/storage/*.key
-/vendor
+node_modules
+public/storage
+storage/*.key
+vendor
 .idea
-/.env
-/.vagrant
+.env
+.vagrant
 .idea/workspace.xml
 Homestead.json
 Homestead.yaml

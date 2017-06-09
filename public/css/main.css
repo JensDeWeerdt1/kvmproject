@@ -122,7 +122,18 @@ body,html{
 }
 
 .pf-block__title__edit{
-    margin-bottom:20px;
+    marg
+
+h3.flex-item1{
+    color:white;}
 }
 
+ul a{
+    color:white;
+}
+
+ul a:hover{
+    color:white;
+    text-decoration:none;
+}
 
