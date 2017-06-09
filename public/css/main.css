@@ -125,4 +125,13 @@ body,html{
     margin-bottom:20px;
 }
 
+ul a{
+    color:white;
+
+}
+
+ul a:hover{
+    color:white;
+    text-decoration:none;
+}
 
