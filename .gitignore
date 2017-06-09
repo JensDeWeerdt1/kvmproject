@@ -2,10 +2,9 @@
 /public/storage
 /storage/*.key
 /vendor
-/.idea
+.idea
 /.env
 /.vagrant
-/.idea/workspace.xml
+.idea/workspace.xml
 Homestead.json
 Homestead.yaml
-../workspace.xml
