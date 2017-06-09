@@ -45,10 +45,6 @@ Route::get('/profiel', function(){
 Route::get('/profiel/instellingen', function(){
     return view('profile_settings')->with('title', 'Profile settings');
 });
-
-Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
-
-
 // profiel instellingen wijzigen
 Route::post('/profiel/instellingen/avatar', 'ProfileController@UserAvatar');
 Route::post('/profiel/instellingen/wachtwoord', 'ProfileController@UserPassword');
@@ -56,3 +52,9 @@ Route::post('/profiel/instellingen/wachtwoord', 'ProfileController@UserPassword'
 Route::post('/profiel/addUser', 'ProfileController@AddUser');
 Route::post('/profiel/UpdateUser', 'ProfileController@UpdateUser');
 Route::get('/profiel/DeleteUser/{id}', 'ProfileController@DeleteUser');
+
+/*HERBEKIJK ROUTES*/
+Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
+
+/*CHAT ROUTES*/
+Route::post('/herbekijk/chat', 'ChatController@Chat');

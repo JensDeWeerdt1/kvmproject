@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateVideosTabel extends Migration
+class CreateChatsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateVideosTabel extends Migration
      */
     public function up()
     {
-        Schema::create('videos', function (Blueprint $table) {
-            $table->increments('video_id');
-            $table->string('thuisPloeg');
-            $table->string('uitPloeg');
-            $table->string('stand');
-            $table->string('videoSrc');
-
+        Schema::create('chats', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+            $table->text('chat');
+            $table->integer('chatHead');
+            $table->text('name');
         });
     }
 
@@ -30,6 +29,6 @@ class CreateVideosTabel extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('videos');
+        Schema::dropIfExists('chats');
     }
 }

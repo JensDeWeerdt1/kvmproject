@@ -8,5 +8,9 @@
                 <h2 class="videotitles">Football 360</h2>
             </div>
         </div>
+        <form class="" action="{{ URL('/herbekijk/chat') }}" method="post">
+            <input type="text" name="chat" id="chat" class="form-control" placeholder="chat text" value="" required><br/>
+            <input type="submit" name="submit" class="submit btn btn-primary" id="chat_submit" value="Submit">
+        </form>
     </div>
 @endsection
