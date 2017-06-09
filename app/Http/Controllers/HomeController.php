@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Video;
 
 class HomeController extends Controller
 {
@@ -26,6 +27,9 @@ class HomeController extends Controller
         // account type achterhalen + optie's
         $loggedInUser = \Auth::user()->id;
 
-        return view('home');
+        $videos = Video::all();
+              //var_dump($videos);
+              return view('home')
+                    ->with('videos', $videos);
     }
 }
