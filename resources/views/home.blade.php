@@ -21,7 +21,6 @@
                 <hr>
                 <ul>
                     @foreach($videos as $video)
-
                         <a href="/herbekijk/{{$video->video_id}}" class="flex-item">
                             <li class="flex-item">
                                 <img class="overview" src="../../images/overview2.jpg" alt="sfeer image">

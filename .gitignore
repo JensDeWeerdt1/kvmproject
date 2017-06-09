@@ -5,6 +5,7 @@
 /.idea
 /.env
 /.vagrant
+/.idea/workspace.xml
 Homestead.json
 Homestead.yaml
 ../workspace.xml
