@@ -60,3 +60,6 @@ Route::get('/profiel/DeleteUser/{id}', 'ProfileController@DeleteUser');
 
 /*HERBEKIJK ROUTES*/
 Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
+
+/*CHAT ROUTES*/
+Route::post('/herbekijk/{id}/chat', 'ChatController@Chat');
