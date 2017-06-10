@@ -63,3 +63,8 @@ Route::get('/herbekijk/{video_id}', 'VideosController@showVideo');
 
 /*CHAT ROUTES*/
 Route::post('/herbekijk/{id}/chat', 'ChatController@Chat');
+
+/*VIDEO STANDPUNT ROUTES*/
+Route::get('/herbekijk/{video_id}/standpunt1', 'VideosController@showVideo');
+Route::get('/herbekijk/{video_id}/standpunt2', 'VideosController@video2');
+Route::get('/herbekijk/{video_id}/standpunt3', 'VideosController@video3');

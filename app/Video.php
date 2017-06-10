@@ -11,6 +11,6 @@ class Video extends Model
     }
 
     protected $fillable = [
-        'video_id', 'thuisPloeg', 'uitPloeg', 'stand', 'videoSrc',
+        'video_id', 'thuisPloeg', 'uitPloeg', 'stand', 'videoSrc', 'videoSrc2', 'videoSrc3'
     ];
 }

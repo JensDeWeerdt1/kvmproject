@@ -5,7 +5,14 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
 
-                <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc }}" frameborder="0" allowfullscreen></iframe>
+                @if ($teller == 1)
+                    <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc }}" frameborder="0" allowfullscreen></iframe>
+                @elseif ($teller == 2)
+                    <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc2 }}" frameborder="0" allowfullscreen></iframe>
+                @elseif ($teller == 3)
+                    <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc3 }}" frameborder="0" allowfullscreen></iframe>
+                @endif
+
 
                 <h2 class="videotitles">Football 360</h2>
                 <div class="dropdown dropdown2">
@@ -14,8 +21,9 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="#">Camera 1</a></li>
-                        <li><a href="#">Camera 2</a></li>
+                        <li><a href="/herbekijk/{{$videoid}}/standpunt1">Camera 1</a></li>
+                        <li><a href="/herbekijk/{{$videoid}}/standpunt2">Camera 2</a></li>
+                        <li><a href="/herbekijk/{{$videoid}}/standpunt3">Camera 3</a></li>
                     </ul>
                 </div>
             </div>
