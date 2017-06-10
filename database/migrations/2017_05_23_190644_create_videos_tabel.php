@@ -19,6 +19,8 @@ class CreateVideosTabel extends Migration
             $table->string('uitPloeg');
             $table->string('stand');
             $table->string('videoSrc');
+            $table->string('videoSrc2');
+            $table->string('videoSrc3');
 
         });
     }
