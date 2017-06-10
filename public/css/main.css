@@ -137,3 +137,16 @@ ul a:hover{
     text-decoration:none;
 }
 
+.comingbtn{
+    width:150px;
+    margin-left:60px;
+    margin-top:20px;
+    padding:20px;
+}
+
+.btncontainer{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:550px;
+}

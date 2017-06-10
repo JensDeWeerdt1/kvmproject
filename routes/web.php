@@ -21,6 +21,11 @@ Route::get('/', function () {
     return view('/auth/login');
 });
 
+
+Route::get('/coming', function () {
+    return view('coming');
+});
+
 route::get('/logout', function(){
     // session data wegdoen en redirecten naar login :)
     Session::flush();
