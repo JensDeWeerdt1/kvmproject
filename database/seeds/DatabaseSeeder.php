@@ -19,8 +19,9 @@ class DatabaseSeeder extends Seeder
         $db2 = DB::table('videos')->insert($video2);
         $db3 = DB::table('videos')->insert($video3);
 
-        $user1 = ['name' => 'Bert', 'email' => 'bert@gmail.com', 'password' => 'wildenbert', 'profilePic' => 'img/defaultprofilepic.jpg'];
-        $db4 = DB::table('users')->insert($user1);
+        $this->call(UsersTableSeeder::class);
 
+        /*$user1 = ['name' => 'Bert', 'email' => 'bert@gmail.com', 'password' => 'wildenbert', 'profilePic' => 'img/defaultprofilepic.jpg'];
+        $db4 = DB::table('users')->insert($user1);*/
     }
 }
