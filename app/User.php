@@ -14,6 +14,14 @@ class User extends Authenticatable
      *
      * @var array
      */
+    public function chat(){
+        return $this->hasMany('App\Chat');
+    }
+
+    public function video(){
+        return $this->hasMany('App\Video');
+    }
+
     protected $fillable = [
         'name', 'email', 'password', 'user_id',
     ];

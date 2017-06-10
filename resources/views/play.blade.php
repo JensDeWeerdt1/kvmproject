@@ -8,6 +8,12 @@
                 <h2 class="videotitles">Football 360</h2>
             </div>
         </div>
+
+        @foreach($chats as $chat)
+            <p>{{$chat->name}}</p>
+            <p>{{$chat->chat}}</p>
+        @endforeach
+
         <form class="" action="/herbekijk/{{$videoid}}/chat" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="text" name="chat" id="chat" class="form-control" placeholder="chat text" value="" required><br/>
