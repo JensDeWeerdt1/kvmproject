@@ -8,12 +8,12 @@
             <h4>Voordat u doorgaat ...</h4>
             <h2>Komt u in het stadion naar de match KVM - Lierse kijken?</h2>
                 <div class="btncontainer">
-            <button class="btn btn-primary comingbtn">
-                Ja
-            </button>
-            <button class="btn btn-primary comingbtn">
-                Nee
-            </button>
+                    <a class="btn btn-primary comingbtn" href="/home">
+                        Ja
+                    </a>
+                    <a class="btn btn-primary comingbtn" href="/home">
+                        Nee
+                    </a>
         </div>
             </div>
         </div>
