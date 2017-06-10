@@ -20,17 +20,22 @@
                 </div>
             </div>
         </div>
-
+        <div class="commentSection">
+            <h4 class="reactiesTitle">Reacties</h4>
         @foreach($chats as $chat)
-            <img src="{{$chat->profilePic}}" alt="user profile image">
-            <p>{{$chat->name}}</p>
-            <p>{{$chat->chat}}</p>
+            <div class="commentBox">
+            <img class="commentImg" src="/{{$chat->profilePic}}" alt="user profile image">
+            <p class="commentName">{{$chat->name}}</p>
+            <p class="commentText">{{$chat->chat}}</p>
+                <span class="clearfix"></span>
+            </div>
         @endforeach
 
         <form class="" action="/herbekijk/{{$videoid}}/chat" method="post">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
-            <input type="text" name="chat" id="chat" class="form-control" placeholder="chat text" value="" required><br/>
-            <input type="submit" name="submit" class="submit btn btn-primary" id="chat_submit" value="Submit">
+            <textarea type="text" rows="4" name="chat" id="chat" class="form-control" placeholder="Typ hier uw reactie" value="" required></textarea><br/>
+            <input type="submit" name="submit" class="submit btn btn-primary" id="chat_submit" value="Reageer">
         </form>
+    </div>
     </div>
 @endsection

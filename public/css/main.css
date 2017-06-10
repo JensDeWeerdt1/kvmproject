@@ -2,6 +2,8 @@ body,html{
     background-image: url("../../images/kvbackground.jpg");
     width:100%;
     height:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .navbar-default{
@@ -160,7 +162,49 @@ ul a:hover{
     margin-right:auto;
 }
 
+.videotitles{
+    color:white;
+    font-weight: bold;
+}
+
 .dropdown2{
     float:right;
     margin-top:-50px;
+}
+
+.commentImg{
+    float:left;
+    width:80px;
+    height:80px;
+    margin-right:20px;
+    border-radius:100%;
+}
+
+.commentBox{
+    margin:10px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.commentSection{
+    display:block;
+    max-width:760px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:white;
+    padding:15px;
+    margin-top:30px;
+}
+
+.commentName{
+    margin-left:30px;
+    color:black;
+    font-weight:bold;
+}
+
+.reactiesTitle{
+    margin-top:0px;
+    margin-bottom:30px;
 }
