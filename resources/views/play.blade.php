@@ -8,10 +8,21 @@
                 <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc }}" frameborder="0" allowfullscreen></iframe>
 
                 <h2 class="videotitles">Football 360</h2>
+                <div class="dropdown dropdown2">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Views
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <li><a href="#">Camera 1</a></li>
+                        <li><a href="#">Camera 2</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         @foreach($chats as $chat)
+            <img src="{{$chat->profilePic}}" alt="user profile image">
             <p>{{$chat->name}}</p>
             <p>{{$chat->chat}}</p>
         @endforeach
