@@ -18,7 +18,13 @@ class VideosController extends Controller
             ->select('videoSrc')
             ->first();
 
+        $query = DB::table('chats')
+            ->leftJoin('users', 'chats.user_id', '=', 'users.id')
+            ->where('video_id', $videoId)->distinct()->get();
+
         return view('play')
-            ->with('videoSrc', $videoSrc->videoSrc);
+            ->with('videoSrc', $videoSrc->videoSrc)
+            ->with('videoid', $videoId)
+            ->with('chats', $query);
     }
 }
