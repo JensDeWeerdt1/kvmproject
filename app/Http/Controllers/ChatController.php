@@ -3,20 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Video;
+use Illuminate\Support\Facades\DB;
 
 class ChatController extends Controller
 {
-    public function Chat(Request $request){
+    public function Chat(Request $request, $id){
         $chat = $request->chat;
         $user = \Auth::user()->name;
         $chatHead = $request->chatHead;
 
 
-        $data = Input::all();
-        console.log($data + "chat: " + $chat + "user: " + $user + "chatHead: " + $chatHead);
+        var_dump($chat);
 
-        /*$query = DB::table('messages')->insert(
-            ['chat' => $chat, 'name' => $name, 'chatHead' => $chatHead]
-        );*/
+        $query = DB::table('chats')->insert(
+            ['chat' => $chat, 'name' => $user, 'chatHead' => $chatHead]
+        );
+
     }
 }

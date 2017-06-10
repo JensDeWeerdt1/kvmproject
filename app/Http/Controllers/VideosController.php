@@ -19,6 +19,7 @@ class VideosController extends Controller
             ->first();
 
         return view('play')
-            ->with('videoSrc', $videoSrc->videoSrc);
+            ->with('videoSrc', $videoSrc->videoSrc)
+            ->with('videoid', $videoId);
     }
 }
