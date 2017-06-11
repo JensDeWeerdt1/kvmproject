@@ -3,7 +3,6 @@ body,html{
     width:100%;
     background-repeat: no-repeat;
     background-size: cover;
-    height:100%;
 }
 
 .navbar-default{
@@ -40,6 +39,7 @@ body,html{
 
 .logreginfo{
     padding-top:20px;
+    padding-bottom:250px;
 }
 
 .logonav{
@@ -160,6 +160,7 @@ ul a:hover{
     margin-left:auto;
     margin-right:auto;
     width:550px;
+    padding-bottom:600px;
 }
 
 .videoplayer{
@@ -246,4 +247,8 @@ ul a:hover{
 
 .user__info__email span{
     font-weight:bold;
+}
+
+.abbo{
+    padding-bottom:200px;
 }

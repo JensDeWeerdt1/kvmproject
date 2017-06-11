@@ -14,7 +14,7 @@
 					<div class="user__info user-col">
 							<h5 class="user__info__name">Naam <br><span>{{ Auth::user()->name }}</span></h5>
 							<h5 class="user__info__email">Email <br><span>{{ Auth::user()->email }}</span></h5>
-						<h5 class="user__info__email">Abonnementnummer<br><span>{{ Auth::user()->abonnementnummer }}</span></h5>
+						<h5 class="user__info__email abbo">Abonnementnummer<br><span>{{ Auth::user()->abonnementnummer }}</span></h5>
 					</div>
 				</div>
 			</div>
