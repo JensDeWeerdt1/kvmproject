@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password');
+            $table->string('abonnementnummer');
             $table->string('profilePic')->default('img/defaultprofilepic.jpg');
             $table->rememberToken();
             $table->timestamps();
