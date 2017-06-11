@@ -18,7 +18,7 @@ class CreateVideosTabel extends Migration
             $table->string('thuisPloeg');
             $table->string('uitPloeg');
             $table->string('stand');
-            $table->string('datum');
+            $table->string('datumMatch');
             $table->string('videoSrc');
             $table->string('videoSrc2');
             $table->string('videoSrc3');
