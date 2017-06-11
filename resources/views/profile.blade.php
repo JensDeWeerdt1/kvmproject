@@ -12,8 +12,9 @@
 						<img src="{{ Auth::user()->profilePic }}" class="user__image" alt="{{ Auth::user()->name }}'s profiel foto">
 					</div>
 					<div class="user__info user-col">
-							<h5 class="user__info__name">Name: <span>{{ Auth::user()->name }}</span></h5>
-							<h5 class="user__info__email">Email: <span>{{ Auth::user()->email }}</span></h5>
+							<h5 class="user__info__name">Naam <br><span>{{ Auth::user()->name }}</span></h5>
+							<h5 class="user__info__email">Email <br><span>{{ Auth::user()->email }}</span></h5>
+						<h5 class="user__info__email">Abonnementnummer<br><span>078379272</span></h5>
 					</div>
 				</div>
 			</div>

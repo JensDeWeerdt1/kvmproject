@@ -213,3 +213,28 @@ ul a:hover{
     margin-top:0px;
     margin-bottom:30px;
 }
+
+.user__image{
+    margin-top:50px;
+    border-radius:100%;
+    width:100px;
+}
+
+.user__info__name{
+     font-size:1.5em;
+     padding-top:20px;
+     padding-bottom:20px;
+ }
+
+.user__info__name span{
+    font-weight:bold;
+}
+
+.user__info__email{
+    font-size:1.5em;
+    padding-bottom:20px;
+}
+
+.user__info__email span{
+    font-weight:bold;
+}
