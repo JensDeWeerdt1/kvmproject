@@ -174,10 +174,14 @@ ul a:hover{
 
 .commentImg{
     float:left;
-    width:80px;
-    height:80px;
+    width:50px;
+    height:50px;
     margin-right:20px;
     border-radius:100%;
+}
+
+.commentText{
+    margin-top:-10px;
 }
 
 .commentBox{
@@ -196,6 +200,7 @@ ul a:hover{
     background-color:white;
     padding:15px;
     margin-top:30px;
+    margin-bottom:20px;
 }
 
 .commentName{
