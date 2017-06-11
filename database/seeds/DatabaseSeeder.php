@@ -15,9 +15,9 @@ class DatabaseSeeder extends Seeder
         $video1 = ['thuisPloeg' => 'KVM','uitPloeg' => 'Gent', 'stand' => '3-2', 'datumMatch' => '27 oktober', 'videoSrc' => '10575', 'videoSrc2' => '10577', 'videoSrc3' => '10578'];
         $video2 = ['thuisPloeg' => 'Standard','uitPloeg' => 'KVM', 'stand' => '1-2', 'datumMatch' => '9 september', 'videoSrc' => '10577', 'videoSrc2' => '10578', 'videoSrc3' => '10575'];
         $video3 = ['thuisPloeg' => 'KVM','uitPloeg' => 'Lierse', 'stand' => '1-0', 'datumMatch' => '17 september', 'videoSrc' => '10578', 'videoSrc2' => '10575', 'videoSrc3' => '10577'];
-        DB::table('videos')->insert($video1);
-        DB::table('videos')->insert($video2);
-        DB::table('videos')->insert($video3);
+        $db1 = DB::table('videos')->insert($video1);
+        $db2 = DB::table('videos')->insert($video2);
+        $db3 = DB::table('videos')->insert($video3);
 
         $this->call(UsersTableSeeder::class);
 
