@@ -44,6 +44,13 @@
             <textarea type="text" rows="4" name="chat" id="chat" class="form-control" placeholder="Typ hier uw reactie" value="" required></textarea><br/>
             <input type="submit" name="submit" class="submit btn btn-primary" id="chat_submit" value="Reageer">
         </form>
-    </div>
+
+            <script type="text/javascript">
+                var ad_width = "300"; // Replace "300" into ad width or macro.
+                var ad_height = "250"; // Replace "250" into ad height or macro.
+                var clickTag = ""; // Insert click tracking pixel url or macro inside the quotes.
+
+                document.write("<img src='//node.adsoptimal.com/3dx/10575/impression/' style='display:none'>"); document.write("<iframe id='ado-10575' src='about:blank' frameborder='0' width='" + ad_width + "' height='" + ad_height + "' webkitAllowFullScreen='1' mozallowfullscreen='1' allowFullScreen='1'></iframe>"); document.getElementById("ado-10575").setAttribute("src", "//upload.omnivirt.com/content/10575?tracking=0&clickTrackingPixelUrl=" + encodeURIComponent(clickTag)); document.write("<scr"+"ipt type=\"text/javascript\" src=\"//remote.vroptimal-3dx-assets.com/scripts/vroptimal.js\"></scr"+"ipt>\n"); </script>
+        </div>
     </div>
 @endsection
