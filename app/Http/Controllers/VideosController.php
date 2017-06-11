@@ -40,6 +40,11 @@ class VideosController extends Controller
             ->select('stand')
             ->first();
 
+        $datumMatch = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('datumMatch')
+            ->first();
+
 
         $query = DB::table('chats')
             ->leftJoin('users', 'chats.user_id', '=', 'users.id')
@@ -50,6 +55,7 @@ class VideosController extends Controller
             ->with('uitPloeg', $uitPloeg->uitPloeg)
             ->with('thuisPloeg', $thuisPloeg->thuisPloeg)
             ->with('stand', $stand->stand)
+            ->with('datumMatch', $datumMatch->datumMatch)
             ->with('videoid', $videoId)
             ->with('chats', $query)
             ->with('teller', $teller);
@@ -77,6 +83,11 @@ class VideosController extends Controller
             ->select('stand')
             ->first();
 
+        $datumMatch = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('datumMatch')
+            ->first();
+
         $query = DB::table('chats')
             ->leftJoin('users', 'chats.user_id', '=', 'users.id')
             ->where('video_id', $videoId)->distinct()->get();
@@ -86,6 +97,7 @@ class VideosController extends Controller
             ->with('uitPloeg', $uitPloeg->uitPloeg)
             ->with('thuisPloeg', $thuisPloeg->thuisPloeg)
             ->with('stand', $stand->stand)
+            ->with('datumMatch', $datumMatch->datumMatch)
             ->with('videoid', $videoId)
             ->with('chats', $query)
             ->with('teller', $teller);
@@ -114,6 +126,11 @@ class VideosController extends Controller
             ->select('stand')
             ->first();
 
+        $datumMatch = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('datumMatch')
+            ->first();
+
         $query = DB::table('chats')
             ->leftJoin('users', 'chats.user_id', '=', 'users.id')
             ->where('video_id', $videoId)->distinct()->get();
@@ -123,6 +140,7 @@ class VideosController extends Controller
             ->with('uitPloeg', $uitPloeg->uitPloeg)
             ->with('thuisPloeg', $thuisPloeg->thuisPloeg)
             ->with('stand', $stand->stand)
+            ->with('datumMatch', $datumMatch->datumMatch)
             ->with('videoid', $videoId)
             ->with('chats', $query)
             ->with('teller', $teller);

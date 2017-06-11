@@ -31,7 +31,7 @@
                                 <h3 class="flex-item1">{{$video->uitPloeg}}</h3>
                             </div>
                             <div class="flexcontainer1">
-                                <h3 class="flex-item2">27 oktober</h3>
+                                <h3 class="flex-item2">{{$video->datumMatch}}</h3>
                             </div>
 
                         </a>
