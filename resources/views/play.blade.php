@@ -14,7 +14,7 @@
                 @endif
 
 
-                <h2 class="videotitles">{{$thuisPloeg}} {{$stand}} {{$uitPloeg}} </h2>
+                <h2 class="videotitles">{{$thuisPloeg}} {{$stand}} {{$uitPloeg}} 27 oktober</h2>
                 <div class="dropdown dropdown2">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                         Views
