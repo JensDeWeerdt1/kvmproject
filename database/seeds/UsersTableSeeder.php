@@ -16,8 +16,9 @@ class UsersTableSeeder extends Seeder
             'name' => 'Bert',
             'password' => bcrypt('wildenbert'),
             'email' => 'bert@gmail.com',
-            'profilePic' => 'img/defaultprofilepic.jpg',
             'abonnementnummer' => '1234',
+            'profilePic' => 'img/defaultprofilepic.jpg',
+
         ]);
     }
 }
