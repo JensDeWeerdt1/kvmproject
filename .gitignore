@@ -3,7 +3,6 @@
 /storage/*.key
 /vendor
 .idea
-.env
 .vagrant
 .idea/workspace.xml
 Homestead.json
