@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Video;
 
 class VideosController extends Controller
 {
@@ -24,12 +25,31 @@ class VideosController extends Controller
             ->select('videoSrc')
             ->first();
 
+        $uitPloeg = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('uitPloeg')
+            ->first();
+
+        $thuisPloeg = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('thuisPloeg')
+            ->first();
+
+        $stand = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('stand')
+            ->first();
+
+
         $query = DB::table('chats')
             ->leftJoin('users', 'chats.user_id', '=', 'users.id')
             ->where('video_id', $videoId)->distinct()->get();
 
         return view('play')
             ->with('videoSrc', $videoSrc->videoSrc)
+            ->with('uitPloeg', $uitPloeg->uitPloeg)
+            ->with('thuisPloeg', $thuisPloeg->thuisPloeg)
+            ->with('stand', $stand->stand)
             ->with('videoid', $videoId)
             ->with('chats', $query)
             ->with('teller', $teller);
@@ -42,15 +62,34 @@ class VideosController extends Controller
             ->select('videoSrc2')
             ->first();
 
+        $uitPloeg = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('uitPloeg')
+            ->first();
+
+        $thuisPloeg = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('thuisPloeg')
+            ->first();
+
+        $stand = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('stand')
+            ->first();
+
         $query = DB::table('chats')
             ->leftJoin('users', 'chats.user_id', '=', 'users.id')
             ->where('video_id', $videoId)->distinct()->get();
 
         return view('play')
             ->with('videoSrc2', $videoSrc2->videoSrc2)
+            ->with('uitPloeg', $uitPloeg->uitPloeg)
+            ->with('thuisPloeg', $thuisPloeg->thuisPloeg)
+            ->with('stand', $stand->stand)
             ->with('videoid', $videoId)
             ->with('chats', $query)
             ->with('teller', $teller);
+
     }
 
     public function video3($videoId) {
@@ -60,12 +99,30 @@ class VideosController extends Controller
             ->select('videoSrc3')
             ->first();
 
+        $uitPloeg = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('uitPloeg')
+            ->first();
+
+        $thuisPloeg = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('thuisPloeg')
+            ->first();
+
+        $stand = DB::table('videos')
+            ->where('video_id', $videoId)
+            ->select('stand')
+            ->first();
+
         $query = DB::table('chats')
             ->leftJoin('users', 'chats.user_id', '=', 'users.id')
             ->where('video_id', $videoId)->distinct()->get();
 
         return view('play')
             ->with('videoSrc3', $videoSrc3->videoSrc3)
+            ->with('uitPloeg', $uitPloeg->uitPloeg)
+            ->with('thuisPloeg', $thuisPloeg->thuisPloeg)
+            ->with('stand', $stand->stand)
             ->with('videoid', $videoId)
             ->with('chats', $query)
             ->with('teller', $teller);
