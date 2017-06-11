@@ -1,10 +1,9 @@
 body,html{
     background-image: url("../../images/kvbackground.jpg");
     width:100%;
-    height:auto;
     background-repeat: no-repeat;
     background-size: cover;
-    height:100vh;
+    height:100%;
 }
 
 .navbar-default{

@@ -16,7 +16,7 @@
                     </ul>
                 </div>
                 <div class="kalender">
-                    <img  src="../../images/calendar.svg" alt="Kalender icoon">
+                    <img id="datepicker" src="../../images/calendar.svg" alt="Kalender icoon">
                 </div>
                 <hr>
                 <ul>
