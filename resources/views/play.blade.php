@@ -6,11 +6,11 @@
             <div class="col-md-8 col-md-offset-2">
 
                 @if ($teller == 1)
-                    <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc }}" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="ado-{{  $videoSrc }}" src="//upload.omnivirt.com/content/{{ $videoSrc }}?tracking=0&amp;clickTrackingPixelUrl=" frameborder="0" width="720" height="250" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1"></iframe><script type="text/javascript">document.getElementById("ado-{{  $videoSrc }}").setAttribute("src", "//www.vroptimal-3dx-assets.com/content/{{  $videoSrc }}?player=true&autoplay=true&referer=" + encodeURIComponent(window.location.href));</script><noscript>. </noscript><script type="text/javascript" src="//remote.vroptimal-3dx-assets.com/scripts/vroptimal.js"></script>
                 @elseif ($teller == 2)
-                    <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc2 }}" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="ado-{{  $videoSrc2 }}" src="//upload.omnivirt.com/content/{{ $videoSrc2 }}?tracking=0&amp;clickTrackingPixelUrl=" frameborder="0" width="720" height="250" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1"></iframe><script type="text/javascript">document.getElementById("ado-{{  $videoSrc2 }}").setAttribute("src", "//www.vroptimal-3dx-assets.com/content/{{  $videoSrc2 }}?player=true&autoplay=true&referer=" + encodeURIComponent(window.location.href));</script><noscript>. </noscript><script type="text/javascript" src="//remote.vroptimal-3dx-assets.com/scripts/vroptimal.js"></script>
                 @elseif ($teller == 3)
-                    <iframe class="videoplayer" width="560" height="315" src="{{ $videoSrc3 }}" frameborder="0" allowfullscreen></iframe>
+                    <iframe id="ado-{{  $videoSrc3 }}" src="//upload.omnivirt.com/content/{{ $videoSrc3 }}?tracking=0&amp;clickTrackingPixelUrl=" frameborder="0" width="720" height="250" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1"></iframe><script type="text/javascript">document.getElementById("ado-{{  $videoSrc3 }}").setAttribute("src", "//www.vroptimal-3dx-assets.com/content/{{  $videoSrc3 }}?player=true&autoplay=true&referer=" + encodeURIComponent(window.location.href));</script><noscript>. </noscript><script type="text/javascript" src="//remote.vroptimal-3dx-assets.com/scripts/vroptimal.js"></script>
                 @endif
 
 
@@ -44,13 +44,6 @@
             <textarea type="text" rows="4" name="chat" id="chat" class="form-control" placeholder="Typ hier uw reactie" value="" required></textarea><br/>
             <input type="submit" name="submit" class="submit btn btn-primary" id="chat_submit" value="Reageer">
         </form>
-
-            <script type="text/javascript">
-                var ad_width = "300"; // Replace "300" into ad width or macro.
-                var ad_height = "250"; // Replace "250" into ad height or macro.
-                var clickTag = ""; // Insert click tracking pixel url or macro inside the quotes.
-
-                document.write("<img src='//node.adsoptimal.com/3dx/10575/impression/' style='display:none'>"); document.write("<iframe id='ado-10575' src='about:blank' frameborder='0' width='" + ad_width + "' height='" + ad_height + "' webkitAllowFullScreen='1' mozallowfullscreen='1' allowFullScreen='1'></iframe>"); document.getElementById("ado-10575").setAttribute("src", "//upload.omnivirt.com/content/10575?tracking=0&clickTrackingPixelUrl=" + encodeURIComponent(clickTag)); document.write("<scr"+"ipt type=\"text/javascript\" src=\"//remote.vroptimal-3dx-assets.com/scripts/vroptimal.js\"></scr"+"ipt>\n"); </script>
         </div>
     </div>
 @endsection
