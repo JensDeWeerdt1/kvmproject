@@ -150,7 +150,6 @@ ul a:hover{
 
 .comingbtn{
     width:150px;
-    margin-right:60px;
     margin-top:20px;
     padding:20px;
 }
@@ -159,7 +158,8 @@ ul a:hover{
     display:block;
     margin-left:auto;
     margin-right:auto;
-    width:550px;
+    width:100%;
+    text-align:center;
     padding-bottom:600px;
 }
 
@@ -270,5 +270,23 @@ ul a:hover{
     margin-right:auto;
     color:white;
     text-align:center;
+    padding-bottom:40px;
+}
+
+.apptitle1{
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    font-weight:bold;
+    margin-bottom:80px;
+}
+
+.appsubtitle1{
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
     padding-bottom:40px;
 }
