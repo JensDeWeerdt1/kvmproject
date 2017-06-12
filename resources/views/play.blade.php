@@ -17,13 +17,13 @@
                 <h2 class="videotitles">{{$thuisPloeg}} {{$stand}} {{$uitPloeg}} {{$datumMatch}}</h2>
                 <div class="dropdown dropdown2">
                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                        Views
+                        Kijkhoeken
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <li><a href="/herbekijk/{{$videoid}}/standpunt1">Camera 1</a></li>
-                        <li><a href="/herbekijk/{{$videoid}}/standpunt2">Camera 2</a></li>
-                        <li><a href="/herbekijk/{{$videoid}}/standpunt3">Camera 3</a></li>
+                        <li><a href="/herbekijk/{{$videoid}}/standpunt1">Kijkhoek 1</a></li>
+                        <li><a href="/herbekijk/{{$videoid}}/standpunt2">Kijkhoek 2</a></li>
+                        <li><a href="/herbekijk/{{$videoid}}/standpunt3">Kijkhoek 3</a></li>
                     </ul>
                 </div>
             </div>
