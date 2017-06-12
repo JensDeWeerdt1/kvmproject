@@ -6,6 +6,8 @@
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
                 <img src="../../images/kvlogo.png" alt="logo kv mechelen" class="logokvm">
+                <h2 class="apptitle">KVM in 360°</h2>
+                <h4 class="appsubtitle">Breng de stadionbeleving naar je thuis of onderweg</h4>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}

@@ -252,3 +252,23 @@ ul a:hover{
 .abbo{
     padding-bottom:200px;
 }
+
+.apptitle{
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-align:center;
+    font-weight:bold;
+}
+
+.appsubtitle{
+    display:block;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    color:white;
+    text-align:center;
+    padding-bottom:40px;
+}
